@@ -1,0 +1,29 @@
+TBLayout: axis: y, size: available, position: gravity, distribution: gravity
+    lp: max-width: 512, min-width: 480, max-height: 640, min-height: 512
+	TBLayout: position: left, gravity: left
+		TBClickLabel: text: "Debug Scene Geometry"
+			font: size: 16
+			TBCheckBox: id: "debugScene", value: 0
+	TBLayout: position: left, gravity: left
+		TBClickLabel: text: "Shadow override for Linux and Android"
+			font: size: 16
+			TBCheckBox: id: "shadowOverride", value: 0
+	TBLayout: axis: y, position: left, gravity: left
+		TBClickLabel: text: "Auto size mobile display (recommended)"
+			font: size: 16
+			TBRadioButton: group-id: mobileSize, id: "autoSz", value: 1
+		TBClickLabel: text: Use Phone Dpi
+			font: size: 16
+			TBRadioButton: group-id: mobileSize, id: "phoneSz"
+		TBClickLabel: text: Use Tablet Dpi
+			font: size: 16
+			TBRadioButton: group-id: mobileSize, id: "tabletSz"
+		TBClickLabel: text: Use Desktop Dpi
+			font: size: 16
+			TBRadioButton: group-id: mobileSize, id: "desktopSz"
+	TBEditField: multiline: 1, styling: 1, gravity: all, id: infotext, readonly: 1, adapt-to-content: 0, text: "Information"
+		font: size: 18dp
+		lp: max-width: 512, min-width: 480
+	TBButton: text: "OK", id: ok
+		font: size: 18dp
+

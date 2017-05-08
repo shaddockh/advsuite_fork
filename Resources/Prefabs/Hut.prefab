@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<node id="-1">
+	<attribute name="Is Enabled" value="true" />
+	<attribute name="Name" value="Hut" />
+	<attribute name="Tags" />
+	<attribute name="Position" value="0 0 0" />
+	<attribute name="Rotation" value="1 0 0 0" />
+	<attribute name="Scale" value="1 1 1" />
+	<attribute name="Variables" />
+	<node id="9120">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="pillar1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 2 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.5 4 0.5" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10873">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/barky.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+		<component type="RigidBody" id="10877">
+			<attribute name="Physics Position" value="0 2 0" />
+		</component>
+		<component type="CollisionShape" id="10878" />
+	</node>
+	<node id="9121">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="pillar2" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 2 -6" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.5 4 0.5" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10874">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/barky.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+		<component type="RigidBody" id="10879">
+			<attribute name="Physics Position" value="0 2 -6" />
+		</component>
+		<component type="CollisionShape" id="10880" />
+	</node>
+	<node id="9122">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="pillar3" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-6 2 -6" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.5 4 0.5" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10875">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/barky.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+		<component type="RigidBody" id="10883">
+			<attribute name="Physics Position" value="-6 2 -6" />
+		</component>
+		<component type="CollisionShape" id="10884" />
+	</node>
+	<node id="9123">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="pillar1" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-6 2 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="0.5 4 0.5" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10876">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/barky.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+		<component type="RigidBody" id="10881">
+			<attribute name="Physics Position" value="-6 2 0" />
+		</component>
+		<component type="CollisionShape" id="10882" />
+	</node>
+	<node id="9124">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="huttop" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-3 4.5 -3" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="8 1 8" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="10885">
+			<attribute name="Model" value="Model;Models/Box.mdl" />
+			<attribute name="Material" value="Material;Materials/needley.material" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+</node>

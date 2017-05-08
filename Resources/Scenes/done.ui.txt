@@ -1,0 +1,7 @@
+TBLayout: axis: y, size: available, position: gravity, distribution: gravity
+    lp: max-width: 512, min-width: 480, max-height: 250, min-height: 150
+	TBEditField: gravity: all, id: donetext, multiline: 1, readonly: 1, adapt-to-content: 1, text: "You Won! Your winning time is 00:00:00\nGood Job!"
+		font: size: 18dp
+	TBButton: text: "OK", id: "ok"
+		font: size: 18dp
+

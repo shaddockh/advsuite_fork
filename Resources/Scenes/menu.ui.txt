@@ -1,0 +1,20 @@
+TBLayout: axis: y, size: available
+	TBTextField: text: "Adventure  Suite", gravity: top, id: "title"
+		font: size: 28dp, name: "Pretzel"
+	TBLayout: axis: x, size: available
+		TBLayout: axis: y, size: available
+			TBSkinImage: skin: "splash"
+		TBLayout: axis: y, size: available
+			TBButton: text: "Adventure 1", id: "play1", opacity: 1.0
+				font: size: 24dp
+			TBButton: text: "Adventure 2", id: "play2", opacity: 0.5
+				font: size: 24dp
+			TBButton: text: "Adventure 3", id: "play3", opacity: 0.5
+				font: size: 24dp
+			TBButton: text: "Adventure 4", id: "play4", opacity: 0.5
+				font: size: 24dp
+			TBButton: text: "Config/Credits", id: "info"
+				font: size: 24dp
+			TBButton: text: "Exit", id: "exit"
+				font: size: 24dp
+

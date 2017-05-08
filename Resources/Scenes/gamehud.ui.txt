@@ -1,0 +1,13 @@
+TBLayout: axis: y, distribution: available, size: gravity, id: "hudmain"
+	TBTextField: text: "Adventure  Suite", gravity: top, id: "titletext"
+		font: size: 18dp, name: "Pretzel"
+	TBWidget: id: "empty0"
+	TBWidget: id: "empty1"
+	TBLayout: axis: x, size: available, distribution: gravity, gravity: bottom, id: "hudbottom"
+		TBTextField: text: "Treasure: 0", id: "scoretext", text-align: "left", gravity: left
+			lp: width: 192dp
+			font: size: 18dp
+		TBTextField: text: "FPS: 100", id: "fpstext", text-align: "left", gravity: right
+			lp: width: 192dp
+			font: size: 18dp
+

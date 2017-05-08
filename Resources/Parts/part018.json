@@ -1,0 +1,10 @@
+{
+  "name": "Pine1",
+  "prefab": "Prefabs/pine1.prefab",
+  "offset": [ 0.0, 0.0, 0.0 ],
+  "rotation": [ 0.0, 0.0, 0.0 ],
+  "scale": [ 1.0, 1.0, 1.0 ],
+  "randpos": [ 3.0, 3.0 ],
+  "randroty": true,
+  "comment" : ""
+}

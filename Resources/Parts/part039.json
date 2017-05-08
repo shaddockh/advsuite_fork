@@ -1,0 +1,10 @@
+{
+  "name": "wtf1",
+  "prefab": "Prefabs/Block.prefab",
+  "offset": [ 0.0, 4.0, 0.0 ],
+  "rotation": [ 0.0, 0.0, 0.0 ],
+  "scale": [ 8.0, 8.0, 8.0 ],
+  "randpos": [ 0.0, 0.0 ],
+  "randroty": false,
+  "comment" : "empty slot"
+}

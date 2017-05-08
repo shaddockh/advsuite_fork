@@ -1,0 +1,10 @@
+{
+  "name": "Totem3",
+  "prefab": "Prefabs/Face3.prefab",
+  "offset": [ 0.0, 2.0, 0.0 ],
+  "rotation": [ 0.0, 0.0, 0.0 ],
+  "scale": [ 2.0, 4.0, 2.0 ],
+  "randpos": [ 3.0, 3.0 ],
+  "randroty": true,
+  "comment" : "many face of paradise"
+}

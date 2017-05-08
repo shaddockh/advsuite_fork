@@ -1,0 +1,10 @@
+{
+  "name": "Hill3",
+  "prefab": "Prefabs/hill3.prefab",
+  "offset": [ 0.0, -6.0, 0.0 ],
+  "rotation": [ 0.0, 0.0, 0.0 ],
+  "scale": [ 16.0, 22.0, 18.0 ],
+  "randpos": [ 0.0, 0.0 ],
+  "randroty": true,
+  "comment" : ""
+}

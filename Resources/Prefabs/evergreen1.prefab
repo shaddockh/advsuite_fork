@@ -1,0 +1,17 @@
+<node id="-1">
+	<attribute name="Name" value="evergreen1"/>
+	<component id="16777216" type="StaticModel">
+		<attribute name="Model" value="Model;Models/evergreen1.mdl"/>
+		<attribute name="Material" value="Material;Materials/needley.material;Materials/trunky.material"/>
+		<attribute name="Cast Shadows" value="true" />
+	</component>
+	<component id="16777217" type="RigidBody">
+		<attribute name="Collision Layer" value="2"/>
+		<attribute name="Use Gravity" value="false"/>
+	</component>
+	<component id="16777218" type="CollisionShape">
+		<attribute name="Shape Type" value="Box"/>
+		<attribute name="Size" value="4 6.26946 4"/>
+		<attribute name="Offset Position" value="2.74454 3.10282 0.118298"/>
+	</component>
+</node>

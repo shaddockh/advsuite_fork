@@ -1,0 +1,9 @@
+# (C) 2017 JimMarlowe, Piranasoft 
+# MIT License
+description
+	base-dpi 24
+	supported-dpi 24 48 96 192 288 384
+elements
+	splash
+		bitmap splash.png
+

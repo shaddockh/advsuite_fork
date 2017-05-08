@@ -1,0 +1,9 @@
+<cubemap>
+    <face name="sky2.png" />
+    <face name="sky2.png" />
+    <face name="sky2top.png" />
+    <face name="sky2bot.png" />
+    <face name="sky2.png" />
+    <face name="sky2.png" />
+    <quality low="0" />
+</cubemap>

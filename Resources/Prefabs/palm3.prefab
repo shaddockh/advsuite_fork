@@ -1,0 +1,17 @@
+<node id="-1">
+	<attribute name="Name" value="palm3"/>
+	<component id="16777216" type="StaticModel">
+		<attribute name="Model" value="Model;Models/palm3.mdl"/>
+		<attribute name="Material" value="Material;Materials/barky.material;Materials/leavey.material"/>
+		<attribute name="Cast Shadows" value="true" />
+	</component>
+	<component id="16777217" type="RigidBody">
+		<attribute name="Collision Layer" value="2"/>
+		<attribute name="Use Gravity" value="false"/>
+	</component>
+	<component id="16777218" type="CollisionShape">
+		<attribute name="Shape Type" value="Box"/>
+		<attribute name="Size" value="1.2 7.83111 1.2"/>
+		<attribute name="Offset Position" value="-0.00382441 3.91556 -0.345591"/>
+	</component>
+</node>

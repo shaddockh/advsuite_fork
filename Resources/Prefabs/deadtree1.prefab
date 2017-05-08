@@ -1,0 +1,17 @@
+<node id="-1">
+	<attribute name="Name" value="deadtree1"/>
+	<component id="16777216" type="StaticModel">
+		<attribute name="Model" value="Model;Models/deadtree1.mdl"/>
+		<attribute name="Material" value="Material;Materials/trunky.material"/>
+		<attribute name="Cast Shadows" value="true" />
+	</component>
+	<component id="16777217" type="RigidBody">
+		<attribute name="Collision Layer" value="2"/>
+		<attribute name="Use Gravity" value="false"/>
+	</component>
+	<component id="16777218" type="CollisionShape">
+		<attribute name="Shape Type" value="Box"/>
+		<attribute name="Size" value="1 2.47825 1"/>
+		<attribute name="Offset Position" value="-0.060015 1.18563 -0.000920057"/>
+	</component>
+</node>

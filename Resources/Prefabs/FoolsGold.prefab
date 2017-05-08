@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<node id="-1">
+	<attribute name="Is Enabled" value="true" />
+	<attribute name="Name" value="FoolsGold" />
+	<attribute name="Tags" />
+	<attribute name="Position" value="8.1353 0.101453 6.1651" />
+	<attribute name="Rotation" value="1 0 0 0" />
+	<attribute name="Scale" value="0.01 0.01 0.01" />
+	<attribute name="Variables" />
+	<component type="StaticModel" id="10819">
+		<attribute name="Model" value="Model;Models/Chest.mdl" />
+		<attribute name="Material" value="Material;Models/Materials/chest.material" />
+		<attribute name="Cast Shadows" value="true" />
+		<attribute name="Geometry Enabled">
+			<variant type="Bool" value="true" />
+		</attribute>
+	</component>
+	<component type="RigidBody" id="10820">
+		<attribute name="Physics Position" value="8.1353 0.101453 6.1651" />
+	</component>
+	<component type="CollisionShape" id="10821">
+		<attribute name="Size" value="82.8973 57.648 55.3238" />
+		<attribute name="Offset Position" value="0 26 1" />
+	</component>
+	<component type="JSComponent" id="10786">
+		<attribute name="ComponentFile" value="JSComponentFile;Components/foolsgold.js" />
+	</component>
+
+</node>

@@ -1,0 +1,17 @@
+<node id="-1">
+	<attribute name="Name" value="tree2"/>
+	<component id="16777216" type="StaticModel">
+		<attribute name="Model" value="Model;Models/tree2.mdl"/>
+		<attribute name="Material" value="Material;Materials/leavey.material;Materials/trunky.material"/>
+		<attribute name="Cast Shadows" value="true" />
+	</component>
+	<component id="16777217" type="RigidBody">
+		<attribute name="Collision Layer" value="2"/>
+		<attribute name="Use Gravity" value="false"/>
+	</component>
+	<component id="16777218" type="CollisionShape">
+		<attribute name="Shape Type" value="Box"/>
+		<attribute name="Size" value="1.5 5.8 1.5"/>
+		<attribute name="Offset Position" value="-0.435649 2.7484 -0.202483"/>
+	</component>
+</node>
