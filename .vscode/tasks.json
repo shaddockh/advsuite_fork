@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "Debug Atomic Player",
+            "command": "/Users/shaddockh/Development/Atomic/AtomicMaster/./AtomicGameEngine/Artifacts/AtomicEditor/AtomicEditor.app/Contents/MacOS/AtomicEditor",
+            "args": [
+                "--player",
+                "--debug",
+                "--project",
+                "${workspaceRoot}"
+            ],
+            "isBackground": true
+        },
+        {
+            "taskName": "Launch Atomic Player",
+            "command": "/Users/shaddockh/Development/Atomic/AtomicMaster/./AtomicGameEngine/Artifacts/AtomicEditor/AtomicEditor.app/Contents/MacOS/AtomicEditor",
+            "args": [
+                "--player",
+                "--project",
+                "${workspaceRoot}"
+            ],
+            "isBackground": true
+        }
+    ]
+}
