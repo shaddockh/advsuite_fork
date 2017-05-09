@@ -1,17 +1,27 @@
-<node id="-1">
-	<attribute name="Name" value="pine2"/>
-	<component id="16777216" type="StaticModel">
-		<attribute name="Model" value="Model;Models/pine2.mdl"/>
-		<attribute name="Material" value="Material;Materials/barky.material;Materials/firy.material"/>
+<?xml version="1.0"?>
+<node id="30">
+	<attribute name="Is Enabled" value="true" />
+	<attribute name="Name" value="pine2" />
+	<attribute name="Tags" />
+	<attribute name="Position" value="0 0 0" />
+	<attribute name="Rotation" value="1 0 0 0" />
+	<attribute name="Scale" value="1 1 1" />
+	<attribute name="Variables" />
+	<component type="RigidBody" id="74">
+		<attribute name="Collision Layer" value="2" />
+		<attribute name="Use Gravity" value="false" />
+	</component>
+	<component type="StaticModel" id="75">
+		<attribute name="Model" value="Model;Models/pine2.mdl" />
+		<attribute name="Material" value="Material;Materials/barky.material;Materials/firy.material" />
 		<attribute name="Cast Shadows" value="true" />
+		<attribute name="Geometry Enabled">
+			<variant type="Bool" value="true" />
+			<variant type="Bool" value="true" />
+		</attribute>
 	</component>
-	<component id="16777217" type="RigidBody">
-		<attribute name="Collision Layer" value="2"/>
-		<attribute name="Use Gravity" value="false"/>
-	</component>
-	<component id="16777218" type="CollisionShape">
-		<attribute name="Shape Type" value="Box"/>
-		<attribute name="Size" value="2 6.11041 2"/>
-		<attribute name="Offset Position" value="0.378418 3.05521 -0.170162"/>
+	<component type="CollisionShape" id="76">
+		<attribute name="Size" value="2 6.11041 2" />
+		<attribute name="Offset Position" value="0.378418 3.05521 -0.170162" />
 	</component>
 </node>

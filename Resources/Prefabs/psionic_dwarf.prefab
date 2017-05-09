@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<node id="-1">
+<node id="18">
 	<attribute name="Is Enabled" value="true" />
 	<attribute name="Name" value="psionic_dwarf" />
 	<attribute name="Tags" />
 	<attribute name="Position" value="0 0 0" />
-	<attribute name="Rotation" value="1 0 180 0" />
-	<attribute name="Scale" value="0.05 0.05 0.05" />
+	<attribute name="Rotation" value="1 0 0 0" />
+	<attribute name="Scale" value="1 1 1" />
 	<attribute name="Variables" />
-	<component type="AnimatedModel" id="10798">
+	<component type="AnimatedModel" id="37">
 		<attribute name="Model" value="Model;Models/DwarfJM/psionic_dwarf_jm.mdl" />
 		<attribute name="Material" value="Material;Models/DwarfJM/Materials/dwarf.material;Models/DwarfJM/Materials/dwarf.material;Models/DwarfJM/Materials/dwarf.material" />
 		<attribute name="Cast Shadows" value="true" />
@@ -59,23 +59,23 @@
 			<variant type="Int" value="0" />
 		</attribute>
 	</component>
-	<component type="JSComponent" id="10799">
+	<component type="JSComponent" id="16777218">
 		<attribute name="ComponentFile" value="JSComponentFile;Components/Character.js" />
 	</component>
-	<component type="JSComponent" id="10800">
+	<component type="JSComponent" id="16777219">
 		<attribute name="ComponentFile" value="JSComponentFile;Components/CharacterController.js" />
 	</component>
-	<component type="RigidBody" id="10801">
+	<component type="RigidBody" id="38">
 		<attribute name="Mass" value="1" />
 		<attribute name="Angular Factor" value="0 0 0" />
 		<attribute name="Collision Event Mode" value="Always" />
 	</component>
-	<component type="CollisionShape" id="10802">
+	<component type="CollisionShape" id="39">
 		<attribute name="Shape Type" value="Capsule" />
 		<attribute name="Size" value="20 60 1" />
 		<attribute name="Offset Position" value="0 26 0" />
 	</component>
-	<component type="AnimationController" id="10803">
+	<component type="AnimationController" id="40">
 		<attribute name="Node Animation States">
 			<variant type="Int" value="0" />
 		</attribute>
