@@ -1,7 +1,511 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="JMPallette5" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="32" tileheight="32" nextobjectid="3">
+ <tileset firstgid="1" name="JMPallette5" tilewidth="32" tileheight="32" tilecount="42" columns="7">
   <image source="JMPallette5.jpg" width="224" height="192"/>
+  <tile id="0">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain2"/>
+    <property name="offset" value="0.0, -8.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount2.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="45, 44, 30"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain3"/>
+    <property name="offset" value="0.0, -9.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount3.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="53, 47, 50"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain4"/>
+    <property name="offset" value="0,-5,0"/>
+    <property name="prefab" value="Prefabs/mount4.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="false"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="20,37,20"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain5"/>
+    <property name="offset" value="0.0, -5.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount5.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="20,33,20"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain6"/>
+    <property name="offset" value="0.0, -5, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="false"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="33, 30, 33"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="comment" value="more of a molehill"/>
+    <property name="name" value="Mountain7"/>
+    <property name="offset" value="0.0, -5.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount7.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30, 20, 34"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="Hill1"/>
+    <property name="offset" value="0, -6, 0"/>
+    <property name="prefab" value="Prefabs/hill1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="16, 27, 16"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="Hill2"/>
+    <property name="offset" value="0, -8, 0"/>
+    <property name="prefab" value="Prefabs/hill2.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="21, 29, 21"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="Hill3"/>
+    <property name="offset" value="0,-6,0"/>
+    <property name="prefab" value="Prefabs/hill3.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="16, 22, 18"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="Hill4"/>
+    <property name="offset" value="0, -8, 0"/>
+    <property name="prefab" value="Prefabs/hill4.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="10, 22, 10"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="Hill5"/>
+    <property name="offset" value="0, -3, 0"/>
+    <property name="prefab" value="Prefabs/hill5.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="10,10,10"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="DeadTree1"/>
+    <property name="offset" value="0,0,0"/>
+    <property name="prefab" value="Prefabs/deadtree1.prefab"/>
+    <property name="randpos" value="3, 3"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="1, 1, 1"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="DeadTree2"/>
+    <property name="offset" value="0,0,0"/>
+    <property name="prefab" value="Prefabs/deadtree2.prefab"/>
+    <property name="randpos" value="4, 4"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="1, 1, 1"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="comment" value=""/>
+    <property name="name" value="Evergreen1"/>
+    <property name="offset" value="0,0,0"/>
+    <property name="prefab" value="Prefabs/evergreen1.prefab"/>
+    <property name="randpos" value="3, 3"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="1, 1, 1"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value=""/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="comment" value="this is what a part is"/>
+    <property name="name" value="Mountain1"/>
+    <property name="offset" value="0.0, -10.0, 0.0"/>
+    <property name="prefab" value="Prefabs/mount1.prefab"/>
+    <property name="randpos" value="0.0, 0.0"/>
+    <property name="randroty" type="bool" value="true"/>
+    <property name="rotation" value="0.0, 0.0, 0.0"/>
+    <property name="scale" value="30.0, 46.0, 30.0"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Tile Layer 1" width="32" height="32">
   <data>
@@ -11,7 +515,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="3"/>
+   <tile gid="1"/>
    <tile gid="0"/>
    <tile gid="2"/>
    <tile gid="0"/>
