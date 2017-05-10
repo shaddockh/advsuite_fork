@@ -21,9 +21,13 @@
 
     export * from "./blueprints/myblueprints";
 */
-function __export(m) {
+function reexport(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 
-__export(require("./blueprints/objects"));
-__export(require("./blueprints/trees"));
+reexport(require("./blueprints/_base"));
+reexport(require("./blueprints/static"));
+reexport(require("./blueprints/objects"));
+reexport(require("./blueprints/terrain"));
+reexport(require("./blueprints/trees"));
+reexport(require("./blueprints/prebuilt"));

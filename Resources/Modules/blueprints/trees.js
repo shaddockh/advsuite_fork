@@ -1,5 +1,5 @@
 exports.baseTree = {
-    inherits: "baseObject",
+    inherits: "prefab",
     RigidBody: {
         collisionLayer: 2,
         useGravity: false

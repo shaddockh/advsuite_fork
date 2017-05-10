@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<node id="34">
+<node id="37">
 	<attribute name="Is Enabled" value="true" />
 	<attribute name="Name" value="tree2" />
 	<attribute name="Tags" />
@@ -7,11 +7,11 @@
 	<attribute name="Rotation" value="1 0 0 0" />
 	<attribute name="Scale" value="1 1 1" />
 	<attribute name="Variables" />
-	<component type="RigidBody" id="86">
+	<component type="RigidBody" id="100">
 		<attribute name="Collision Layer" value="2" />
 		<attribute name="Use Gravity" value="false" />
 	</component>
-	<component type="StaticModel" id="87">
+	<component type="StaticModel" id="101">
 		<attribute name="Model" value="Model;Models/tree2.mdl" />
 		<attribute name="Material" value="Material;Materials/leavey.material;Materials/trunky.material" />
 		<attribute name="Cast Shadows" value="true" />
@@ -20,7 +20,7 @@
 			<variant type="Bool" value="true" />
 		</attribute>
 	</component>
-	<component type="CollisionShape" id="88">
+	<component type="CollisionShape" id="102">
 		<attribute name="Size" value="1.5 5.8 1.5" />
 		<attribute name="Offset Position" value="-0.435649 2.7484 -0.202483" />
 	</component>

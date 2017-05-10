@@ -1,22 +1,5 @@
-exports.baseObject = {
-    prefabDir: "Prefabs",
-    isPrefab: true,
-};
-
-exports.Block = {
-    inherits: "baseObject",
-    scale: [8, 8, 8],
-    StaticModel: {
-        model: "Models/Box.mdl",
-        material: "Materials/block.material",
-        castShadows: true
-    },
-    RigidBody: {},
-    CollisionShape: {}
-};
-
 exports.chestBase = {
-    inherits: "baseObject",
+    inherits: "prefab",
     scale: [0.01, 0.01, 0.01],
     StaticModel: {
         model: "Models/Chest.mdl",
@@ -41,7 +24,7 @@ exports.FoolsGold = {
 };
 
 exports.eggBase = {
-    inherits: "baseObject",
+    inherits: "prefab",
     StaticModel: {
         model: "Models/Cylinder.mdl"
     }
@@ -61,45 +44,8 @@ exports.egg3 = {
     inherits: "eggBase",
     StaticModel: { material: "Materials/egg3.material" }
 };
-
-exports.faceBase = {
-    inherits: "baseObject",
-    scale: [8, 8, 8],
-    StaticModel: {
-        model: "Models/Box.mdl",
-        castShadows: true
-    },
-    RigidBody: {},
-    CollisionShape: {}
-};
-
-exports.Face = {
-    inherits: "faceBase",
-    StaticModel: { material: "Materials/face1.material" },
-};
-
-exports.Face2 = {
-    inherits: "faceBase",
-    StaticModel: { material: "Materials/face3.material" },
-};
-
-exports.Face3 = {
-    inherits: "faceBase",
-    StaticModel: { material: "Materials/face3.material" },
-};
-
-exports.Face4 = {
-    inherits: "faceBase",
-    StaticModel: { material: "Materials/face4.material" },
-};
-
-exports.Face5 = {
-    inherits: "faceBase",
-    StaticModel: { material: "Materials/face5.material" },
-};
-
 exports.Spawn = {
-    inherits: "baseObject",
+    inherits: "prefab",
     scale: [1, 0.01, 1],
     StaticModel: {
         model: "Models/Cylinder.mdl",
@@ -108,7 +54,7 @@ exports.Spawn = {
 }
 
 exports.psionic_dwarf = {
-    inherits: "baseObject",
+    inherits: "prefab",
     AnimatedModel: {
         model: "Models/DwarfJM/psionic_dwarf_jm.mdl",
         material: "Models/DwarfJM/Materials/dwarf.material;Models/DwarfJM/Materials/dwarf.material;Models/DwarfJM/Materials/dwarf.material",

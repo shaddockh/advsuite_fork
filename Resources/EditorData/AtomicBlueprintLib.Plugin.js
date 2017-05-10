@@ -12,6 +12,7 @@ var AtomicBlueprintlibPlugin = (function () {
         this.serviceLocator = null;
         this.blueprintPath = "Modules/blueprints";
         this.generatedPrefabsDirectory = "Prefabs/Generated";
+        this.onlyGenerateLeafNodes = true;
     }
     AtomicBlueprintlibPlugin.prototype.log = function (message) {
         if (debug) {
@@ -65,6 +66,7 @@ var AtomicBlueprintlibPlugin = (function () {
             this.serviceLocator.uiServices.register(this);
             this.generatedPrefabsDirectory = this.serviceLocator.projectServices.getUserPreference(this.name, "GeneratedPrefabsDirectory", this.generatedPrefabsDirectory);
             this.blueprintPath = this.serviceLocator.projectServices.getUserPreference(this.name, "BlueprintPath", this.blueprintPath);
+            this.onlyGenerateLeafNodes = this.serviceLocator.projectServices.getUserPreference(this.name, "OnlyGenerateLeafNodes", this.onlyGenerateLeafNodes);
         }
     };
     AtomicBlueprintlibPlugin.prototype.projectUnloaded = function () {
@@ -127,10 +129,13 @@ var AtomicBlueprintlibPlugin = (function () {
             for (var i = 0; i < blueprintNames.length; i++) {
                 var blueprint = blueprintLib.catalog.getBlueprint(blueprintNames[i]);
                 if (blueprint.isPrefab && !blueprint.prebuilt) {
-                    var path = defaultPath;
-                    if (blueprint.isPrefab) {
-                        path = blueprint.prefabDir;
+                    // Check to see if we only want to generate leaf nodes
+                    if (this.onlyGenerateLeafNodes) {
+                        if (blueprintLib.catalog.getBlueprintsDescendingFrom(blueprintNames[i], false).length > 0) {
+                            continue;
+                        }
                     }
+                    var path = blueprint.prefabDir;
                     fs.createDirs(resourcePath, path);
                     this.generatePrefab(scene, blueprint, Atomic.addTrailingSlash(resourcePath) + Atomic.addTrailingSlash(path) + blueprintNames[i] + ".prefab");
                 }

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<node id="26">
+<node id="31">
 	<attribute name="Is Enabled" value="true" />
 	<attribute name="Name" value="palm2" />
 	<attribute name="Tags" />
@@ -7,11 +7,11 @@
 	<attribute name="Rotation" value="1 0 0 0" />
 	<attribute name="Scale" value="1 1 1" />
 	<attribute name="Variables" />
-	<component type="RigidBody" id="62">
+	<component type="RigidBody" id="82">
 		<attribute name="Collision Layer" value="2" />
 		<attribute name="Use Gravity" value="false" />
 	</component>
-	<component type="StaticModel" id="63">
+	<component type="StaticModel" id="83">
 		<attribute name="Model" value="Model;Models/palm2.mdl" />
 		<attribute name="Material" value="Material;Materials/barky.material;Materials/leafy.material" />
 		<attribute name="Cast Shadows" value="true" />
@@ -20,7 +20,7 @@
 			<variant type="Bool" value="true" />
 		</attribute>
 	</component>
-	<component type="CollisionShape" id="64">
+	<component type="CollisionShape" id="84">
 		<attribute name="Size" value="1.2 7.85562 1.2" />
 		<attribute name="Offset Position" value="-0.0315316 3.92877 -0.871786" />
 	</component>
