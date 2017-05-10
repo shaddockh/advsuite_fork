@@ -1,0 +1,12 @@
+{
+  "Character": "Components/Character.js",
+  "CharacterController": "Components/CharacterController.js",
+  "chest": "Components/chest.js",
+  "foolsgold": "Components/foolsgold.js",
+  "screenshot": "Components/screenshot.js",
+  "state-done": "Components/state-done.js",
+  "state-info": "Components/state-info.js",
+  "state-menu": "Components/state-menu.js",
+  "state-play": "Components/state-play.js",
+  "storage": "Components/storage.js"
+}

@@ -13,6 +13,7 @@ var AtomicBlueprintlibPlugin = (function () {
         this.blueprintPath = "Modules/blueprints";
         this.generatedPrefabsDirectory = "Prefabs/Generated";
         this.onlyGenerateLeafNodes = true;
+        this.autogeneratePrefabsOnRun = false;
     }
     AtomicBlueprintlibPlugin.prototype.log = function (message) {
         if (debug) {
@@ -67,6 +68,12 @@ var AtomicBlueprintlibPlugin = (function () {
             this.generatedPrefabsDirectory = this.serviceLocator.projectServices.getUserPreference(this.name, "GeneratedPrefabsDirectory", this.generatedPrefabsDirectory);
             this.blueprintPath = this.serviceLocator.projectServices.getUserPreference(this.name, "BlueprintPath", this.blueprintPath);
             this.onlyGenerateLeafNodes = this.serviceLocator.projectServices.getUserPreference(this.name, "OnlyGenerateLeafNodes", this.onlyGenerateLeafNodes);
+            this.autogeneratePrefabsOnRun = this.serviceLocator.projectServices.getUserPreference(this.name, "AutogeneratePrefabsOnRun", this.autogeneratePrefabsOnRun);
+            // Save the settings
+            this.serviceLocator.projectServices.setUserPreference(this.name, "GeneratedPrefabsDirectory", this.generatedPrefabsDirectory);
+            this.serviceLocator.projectServices.setUserPreference(this.name, "BlueprintPath", this.blueprintPath);
+            this.serviceLocator.projectServices.setUserPreference(this.name, "OnlyGenerateLeafNodes", this.onlyGenerateLeafNodes);
+            this.serviceLocator.projectServices.setUserPreference(this.name, "AutogeneratePrefabsOnRun", this.autogeneratePrefabsOnRun);
         }
     };
     AtomicBlueprintlibPlugin.prototype.projectUnloaded = function () {
@@ -85,10 +92,12 @@ var AtomicBlueprintlibPlugin = (function () {
     AtomicBlueprintlibPlugin.prototype.playerStarted = function () {
         this.log("playerStarted");
         try {
-            this.generateComponentIndex();
-            this.loadBlueprintCatalog();
-            this.generatePrefabs();
-            ToolCore.assetDatabase.reimportAllAssets();
+            if (this.autogeneratePrefabsOnRun) {
+                this.generateComponentIndex();
+                this.loadBlueprintCatalog();
+                this.generatePrefabs();
+                ToolCore.assetDatabase.reimportAllAssets();
+            }
         }
         finally {
             blueprintLib.reset();

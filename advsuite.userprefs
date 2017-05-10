@@ -1,0 +1,8 @@
+{
+  "AtomicBlueprintLibPlugin": {
+    "GeneratedPrefabsDirectory": "Prefabs/Generated",
+    "BlueprintPath": "Modules/blueprints",
+    "OnlyGenerateLeafNodes": true,
+    "AutogeneratePrefabsOnRun": false
+  }
+}
