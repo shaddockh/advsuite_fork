@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="JMPallette5" tilewidth="32" tileheight="32">
-  <image source="JMPallette5.jpg" width="224" height="192"/>
- </tileset>
+ <tileset firstgid="1" source="JMPallette5.tsx"/>
  <layer name="Tile Layer 1" width="32" height="32">
   <data>
    <tile gid="1"/>
