@@ -20,6 +20,16 @@ function toPaddedString(num, len) {
     return "000";
 }
 
+/** Utility function to parse a string array into a numeric array */
+function strToFloatArray(str) {
+    var result = [];
+    var arr = str.split(",");
+    for (var i = 0; i < arr.length; i++) {
+        result.push(parseFloat(arr[i]));
+    }
+    return result;
+}
+
 // The manifestation of the tmx2scene object, named Plat
 function Plat() {
 
@@ -72,14 +82,6 @@ Plat.prototype.loadParts = function (num) {
     }
 };
 
-/** Utility function to parse a string array into a numeric array */
-function parseNumericArray(arr) {
-    var result = [];
-    for (var i = 0; i < arr.length; i++) {
-        result.push(parseInt(arr[i], 10));
-    }
-    return result;
-}
 
 Plat.prototype.getTileProperties = function (tile) {
 
@@ -87,12 +89,12 @@ Plat.prototype.getTileProperties = function (tile) {
         return {
             comment: tile.getProperty("comment"),
             name: tile.getProperty("name"),
-            offset: parseNumericArray(tile.getProperty("offset").split(",")),
+            offset: strToFloatArray(tile.getProperty("offset")),
             prefab: tile.getProperty("prefab"),
-            randpos: parseNumericArray(tile.getProperty("randpos").split(",")),
+            randpos: strToFloatArray(tile.getProperty("randpos")),
             randroty: tile.getProperty("randroty") == "true",
-            rotation: parseNumericArray(tile.getProperty("rotation").split(",")),
-            scale: parseNumericArray(tile.getProperty("scale").split(","))
+            rotation: strToFloatArray(tile.getProperty("rotation")),
+            scale: strToFloatArray(tile.getProperty("scale"))
         };
     }
 }
@@ -100,8 +102,8 @@ Plat.prototype.getTileProperties = function (tile) {
 // add a part into the scene  via prefab and part specification
 Plat.prototype.plotInScene = function (xi, yi, gi, tile) {
     // Gets the properties from the tiles and if not there, looks at the parts
-    var objx = this.getTileProperties(tile) || this.parts[gi];
-    if (objx !== null) {
+    var objx = this.getTileProperties(tile);
+    if (objx) {
         var mapnode = this.pscene.getChild(this.mapHandle, true); // do it inside of a container node
         if (mapnode === null) return;
         var prefabby = mapnode.createChildPrefab(objx.name, objx.prefab);
